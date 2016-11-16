@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"    >
+
+    <EditText
+        android:id="@+id/term"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/term"
+        android:layout_marginTop="20dp">
+
+        <RadioGroup
+            android:id="@+id/entityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <RadioButton
+                android:id="@+id/movieRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/podcastRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/podcast"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/musicRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/musicVideoRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musicVideo"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/audiobookRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audioBook"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/shortfilmRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shortfilm"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/tvshowRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvshow"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/softwareRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/software"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/ebookRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ebook"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all"
+                android:textColor="@color/colorWhite" />
+
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/getDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button" />
+
+
+</RelativeLayout>
